@@ -1,0 +1,594 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: black;
+    transform: scale(1.2);
+    transition-delay: 3s;
+}
+header {
+    position: relative;
+    padding: 10px;
+    background-color: rgba(227, 227, 227, 0.18);
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 1;
+}
+
+header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+}
+
+.overlay {
+    display: none;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: black;
+    font-size: 2.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.logo h3 span {
+    font-size: 2.55rem;
+    color: hsl(16, 100%, 50%);
+    font-weight: 700;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.links a {
+    color: rgb(235, 74, 15);
+    margin-left: 4.5rem;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    color: #fff !important;
+    background-color: orangered;
+    border-radius: 25px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0.5px 0.8px 1px 1px rgb(33, 33, 33);
+    transform: scale(0.9) !important;
+    color: orangered !important;
+}
+.slide-menu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.showcase-area .hero {
+    display: grid;
+    background-color: #599bd24d;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.big-title {
+    font-size: 1.4rem;
+    color: black;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.big-title h1 {
+    text-decoration: none;
+    font-weight: 600px;
+    padding-bottom: 10px;
+}
+
+.big-title h2 {
+    font-size: 18px;
+}
+
+.big-title h3 {
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+.text {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.showcase-area .btn {
+    margin-top: 5px;
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.hero-img {
+    width: 80%;
+    transform: translate(10px, 15px);
+    height: 800px;
+    margin-top: -80px;
+    margin-bottom: -100px;
+}
+
+/* Hero section styling ends */
+/* Add styling to skill section */
+section.skills {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+}
+
+.headline {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.skills-containar {
+    display: grid;
+    gap: 0px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px , 1fr));
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.skills-img {
+    width: 40%;
+    padding-left: 4rem;
+}
+.bars h3, p{
+    text-align: left;
+}
+.bars-box {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.bars-box h3 span {
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.light-bar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: hsla(60, 1%, 68%, 0.826);
+    border-radius: 0.5rem;
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: orangered;
+    border-radius: 0.5rem;
+}
+
+.web-bar {
+    width: 85%;
+}
+
+.design-bar {
+    width: 90%;
+}
+
+.seo-bar {
+    width: 95%;
+}
+
+.speed-bar {
+    width: 95%;
+}
+
+
+/* services section styling */
+.Services {
+    align-items: center;
+    text-align: center;
+}
+
+.services-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2 rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.services-box {
+    padding: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-bottom: 3px solid orangered;
+    box-shadow: 0px 2px 8px rgba(71, 71, 71, 0.25);
+    padding: 25px;
+}
+
+.services-box:hover {
+    background: orangered;
+    color: #fff;
+}
+
+.services-box a:hover {
+    color: white;
+}
+
+.icon {
+    size: 65px;
+    height: 50px;
+    margin: 15px;
+    color: orangered;
+}
+
+/* Add styling to services section ends */
+
+/* Add styling portfolio section */
+.p-section-h {
+    display: center;
+    text-decoration: bold;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 50px;
+    margin-top: 25px;
+}
+
+.port-1 {
+    width: 33.3%;
+}
+
+.port-2 {
+    width: 33.3%;
+}
+
+.port-3 {
+    width: 33.3%;
+}
+.card{
+    max-width: 95%;
+}
+.card-text {
+    padding-right: 15px;
+    margin: 10px 0;
+
+}
+
+/* Add styling for the education section */
+
+.Education {
+    padding: 25px 50px;
+}
+
+/* Create three equal columns that float next to each other */
+.edu-container {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ padding: 50px 0px;
+}
+.edu-coloumn {
+   width: 33.3%;  
+   line-height: 2rem;
+}
+.edu-coloumn h4{
+    font-size: 18px;
+    font-weight: 600px;
+}
+.edu-coloumn a{
+    color:rgb(18, 101, 219) ;
+    font-size: 16px;
+    font-weight: 500px;
+}
+.edu-coloumn a:hover{
+    color:orangered !important ;
+    font-size: 16px;
+    font-weight: 500px;
+    transition-delay: 0.1s;
+}
+/*Media Queries*/
+/* Responsive layout - makes the three columns stack on top of each other instead of 
+next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .body{
+        padding: 10px;
+        margin: 5px;
+    }
+    .logo {
+        width: 25px;
+    }
+    .head{
+        display: none !important;
+    }
+    .hero {
+        max-width: 90%;
+        padding: 5px;
+        transform: none;
+        margin: 0px;
+        padding: 10px;
+    }
+    .slide-menu{
+        display: block !important;
+    }
+    .left {
+    width: 95%;
+    }
+
+    .skills-containar{
+        margin: 5px;
+        padding: 5px;
+        max-width:100%;
+    }
+    .skills-img{
+       max-width: 90%;
+       align-items: center;
+       justify-content: center;
+       margin: 0px;
+       padding: 0px;
+        
+    }
+    .bars{
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+   
+    }
+    .services-container {
+        margin: 15px;
+        padding:5px;
+    }
+    .services-box{
+        width: 100%;
+    }
+    .portfolio{
+   display: flex;
+    }
+    .port-1, 
+    .port-2, 
+    .port-3{
+        width: 95%;
+    }
+    .card{
+        width: 95%;
+    }
+    .edu-coloumn {
+        width: 100%;
+    }
+    .links{
+        display: none;
+    }
+    .footer{
+        align-items: center;
+        justify-content:center;
+
+    }
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    height: 300px;
+    /* Set a fixed container height */
+}
+
+.item {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add styling for project items */
+.contact-con {
+    display: flex;
+    margin: 25px 50px;
+}
+
+.con-heading-1 {
+    display: flex;
+    text-align: center;
+    margin: 25px 50px;
+}
+
+.contact-info {
+    width: 40%;
+    padding-top: 50px;
+    margin-top: 25px;
+}
+.contact-info a {
+   color: black;  
+}
+.contact-info-a:hover {
+    color: orangered;  
+ }
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: orangered;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(255, 68, 0, 0.836);
+
+}
+
+.container-2 {
+    width: 100%;
+    align-items: right;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+    .contact-info,
+    .container-2,
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.footer {
+    display: flex;
+    padding: 80px 50px;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    gap: 3rem;
+}
+
+
+.col-1 {
+    width :40%;
+    padding-right: 25px;
+    font-size: 18px;
+}
+.col-2 {
+    width :20%;
+}
+.col-3 {
+    width :20%;
+}
+.copyright {
+    align-items: center;
+    padding: 10px 50px;
+}
